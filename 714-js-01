@@ -1,0 +1,201 @@
+// https://www.codewars.com/kata/55ecd718f46fba02e5000029/train/javascript
+function between(a, b) {
+  const result = [];
+  for (let i = a; i <= b; i++) {
+    result.push(i);
+  }
+  return result;
+}
+
+
+// https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/javascript
+function findAverage(array) {
+  let result = 0;
+  if (array.length === 0) {
+    return 0;
+  }
+ for (let item of array) {
+   result += item;
+ }
+  return result / array.length;
+}
+
+
+// https://www.codewars.com/kata/5583090cbe83f4fd8c000051/train/javascript
+function digitize(n) {
+  let numberToString = String(n).split("");
+  const resultArray = [];
+  for (let i of numberToString) {
+    resultArray.unshift(Number(i));
+  }
+  console.log(resultArray);
+  return resultArray;
+}
+
+
+// https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/train/javascript
+function firstNonConsecutive(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] + 1 !== arr[i + 1]) {
+      return arr[i + 1];
+    }
+  }
+  return null;
+}
+
+
+// https://www.codewars.com/kata/57a429e253ba3381850000fb/train/javascript
+function bmi(weight, height) {
+  const bmi = weight / Math.pow(height, 2);
+  if (bmi > 30.0) {
+    return "Obese";
+  }
+  if (bmi > 25.0) {
+    return "Overweight";
+  }
+  if (bmi > 18.5) {
+    return "Normal";
+  }
+  return "Underweight";
+}
+
+// https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
+ function howManySmaller(arr,n) {
+    const resultArray = [];
+    for (let i of arr) {
+      resultArray.push(+i.toFixed(2));
+    }
+    let resultNumber = 0;
+    for (let x of resultArray) {
+      if (x < n) {
+        resultNumber++;
+      }
+    }
+    return resultNumber;
+  }
+
+
+// https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/javascript
+function solution(str) {
+  const arr = str.split("");
+  return arr.reverse().join("");
+}
+
+
+// https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript
+function disemvowel(str) {
+  const vowels = 'aeouiAEOUI';
+  const arr = [];
+  for (let item of str) {
+    if (!vowels.includes(item)) {
+      arr.push(item);
+    }
+  }
+  const result = arr.join('');
+  return result;
+}
+
+
+// https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript
+function countSheeps(arrayOfSheep) {
+  let result = 0;
+  for (let i of arrayOfSheep) {
+    if (i === true) {
+      result++;
+    }
+  }
+  return result;
+}
+
+// https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+function maps(x){
+  const resultArray = [];
+  for (let i of x) {
+    resultArray.push(i * 2);
+  }
+  return resultArray;
+}
+
+
+// https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/javascript
+function reverseWords(str) {
+  const arrFromString = str.split(' ');
+  const arrReverse = arrFromString.map(word => word.split("").reverse().join("")); 
+  const resultString = arrReverse.join(' ');
+  return resultString;
+}
+
+// https://www.codewars.com/kata/56f69d9f9400f508fb000ba7/train/javascript
+function monkeyCount(n) {
+  const result = [];
+  for (let i = 1; i <= n; i++) {
+    result.push(i);
+  }
+  return result;
+}
+
+// https://www.codewars.com/kata/571edd157e8954bab500032d/train/javascript
+  var v1 = 50; v2 = 100, v3 = 150, v4 = 200, v5 = 2, v6 = 250;
+function equal1() {
+  var a = v1;  
+  var b = v1;  
+  return a + b;
+}
+//Please refer to the example above to complete the following functions
+function equal2(){
+  var a = v3;
+  var b = v1;
+  return a - b;
+}
+function equal3(){
+  var a = v1;
+  var b = v5;
+  return a * b;
+}
+function equal4(){
+  var a = v4;
+  var b = v5;
+  return a / b;
+}
+function equal5(){
+  var a = v6;
+  var b = v3;
+  return a % b;
+} 
+
+
+// http://www.codewars.com/kata/571effabb625ed9b0600107a
+function getLength(arr){
+  //return length of arr
+  return arr.length;
+}
+function getFirst(arr){
+  //return the first element of arr
+  return arr[0];
+}
+function getLast(arr){
+  //return the last element of arr
+  return arr[arr.length - 1];
+}
+function pushElement(arr){
+  var el=1;
+  //push el to arr
+  arr.push(el);
+  return arr;
+}
+function popElement(arr){
+  //pop an element from arr
+  arr.pop();
+  return arr;
+}
+
+
+// http://www.codewars.com/kata/571f1eb77e8954a812000837
+function animal(obj){
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
+}
+
+// https://www.codewars.com/kata/551f37452ff852b7bd000139/train/javascript
+function addBinary(a, b) {
+  return (a + b).toString(2);
+}
