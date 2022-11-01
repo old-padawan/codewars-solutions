@@ -3,5 +3,7 @@
 function solution(start, finish) {
   const distanceForJumping = finish - start;
   const oneJump = 3;
-  return Math.floor(distanceForJumping / oneJump + distanceForJumping % oneJump);  
+  return Math.floor(
+    distanceForJumping / oneJump + (distanceForJumping % oneJump)
+  );
 }
